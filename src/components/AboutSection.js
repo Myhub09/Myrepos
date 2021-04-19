@@ -1,18 +1,21 @@
 import React from "react";
 
+// Styled
+import styled from "styled-components";
+
 const AboutSection = () => {
   return (
-    <div>
+    <About>
       <div className="description">
-        <div className="hide">
+        <Hide>
           <h2>Traditionnellement</h2>
-        </div>
-        <div className="hide">
+        </Hide>
+        <Hide>
           <h2>photographié par</h2>
-        </div>
-        <div className="hide">
+        </Hide>
+        <Hide>
           <h2>Finest Film.</h2>
-        </div>
+        </Hide>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
           consequat mauris malesuada eros tincidunt, ut tristique nibh pretium.
@@ -20,8 +23,22 @@ const AboutSection = () => {
         </p>
         <button>Contactez-nous</button>
       </div>
-    </div>
+    </About>
   );
 };
+
+// Styled Components
+const About = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 5rem 25rem;
+  color: #011627;
+`;
+const Hide = styled.div`
+  overflow: hidden;
+`;
 
 export default AboutSection;
