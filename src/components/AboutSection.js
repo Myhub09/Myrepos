@@ -3,6 +3,9 @@ import React from "react";
 // Styled
 import styled from "styled-components";
 
+// Styles
+import { About, Hide } from "../styles";
+
 const AboutSection = () => {
   return (
     <About>
@@ -26,19 +29,5 @@ const AboutSection = () => {
     </About>
   );
 };
-
-// Styled Components
-const About = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  padding: 5rem 25rem;
-  color: #011627;
-`;
-const Hide = styled.div`
-  overflow: hidden;
-`;
 
 export default AboutSection;
