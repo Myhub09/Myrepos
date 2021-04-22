@@ -141,6 +141,7 @@ const Faq = styled(About)`
   }
   h2 {
     padding-bottom: 2rem;
+    font-size: 3rem;
   }
   .faq-line {
     background: #011627;

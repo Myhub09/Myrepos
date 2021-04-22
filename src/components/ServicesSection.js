@@ -64,9 +64,10 @@ export const Services = styled(About)`
   padding: 5rem 10rem;
   h2 {
     padding-bottom: 5rem;
+    font-size: 3rem;
   }
   p {
-    width: 50%;
+    width: 75%;
     padding: 2rem 0rem 4rem 0rem;
   }
 `;
@@ -77,7 +78,7 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 15rem;
 `;
 
 const Icon = styled.div`

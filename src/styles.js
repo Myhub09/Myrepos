@@ -40,17 +40,16 @@ export const Hide = styled.div`
 // Portfolio
 export const HeaderSection = styled.div`
   min-height: 90vh;
-  display: flex;
   align-items: center;
   text-align: left;
   justify-content: space-between;
-  padding: 5rem 25rem;
+  padding: 5rem 10rem;
   h1 {
     font-size: 10rem;
     color: #fcfdff;
   }
   p {
     color: #fcfdff;
-    margin-left: 2rem;
+    padding-right: 20rem;
   }
 `;
