@@ -12,7 +12,7 @@ import styled from "styled-components";
 import { About, Description, Image, Hide } from "../styles";
 
 // Images
-import home2 from "../img/home2.png";
+import film2 from "../img/film2.jpg";
 
 const ServicesSection = () => {
   return (
@@ -53,7 +53,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="Caméra" />
+        <img src={film2} alt="Caméra" />
       </Image>
     </Services>
   );

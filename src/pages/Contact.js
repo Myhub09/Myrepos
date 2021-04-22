@@ -5,7 +5,7 @@ import styled from "styled-components";
 import ContactHeader from "../components/ContactHeader";
 
 // Images
-import home2 from "../img/home2.png";
+import film from "../img/film.jpg";
 
 import { About, Description, Image } from "../styles";
 
@@ -43,7 +43,7 @@ const Contact = () => {
           </div>
         </Description>
         <Image>
-          <img src={home2} alt="Caméra" />
+          <img src={film} alt="Caméra" />
         </Image>
       </StyledContact>
     </>
