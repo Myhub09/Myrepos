@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Styled Components
+// Home
 export const About = styled.div`
   min-height: 90vh;
   display: flex;
@@ -35,4 +35,22 @@ export const Image = styled.div`
 
 export const Hide = styled.div`
   overflow: hidden;
+`;
+
+// Portfolio
+export const HeaderSection = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  padding: 5rem 25rem;
+  h1 {
+    font-size: 10rem;
+    color: #fcfdff;
+  }
+  p {
+    color: #fcfdff;
+    margin-left: 2rem;
+  }
 `;

@@ -9,7 +9,7 @@ import { About, Hide } from "../styles";
 const AboutSection = () => {
   return (
     <About>
-      <div className="description">
+      <div>
         <Hide>
           <h2>Traditionnellement</h2>
         </Hide>
