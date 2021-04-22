@@ -1,7 +1,7 @@
 import React from "react";
 
 // Styled
-import styled from "styled-components";
+// import styled from "styled-components";
 
 // Styles
 import { About, Hide } from "../styles";

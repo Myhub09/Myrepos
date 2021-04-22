@@ -9,7 +9,7 @@ import objet from "../img/objet.svg";
 import styled from "styled-components";
 
 // Styles
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Image } from "../styles";
 
 // Images
 import film2 from "../img/film2.jpg";
