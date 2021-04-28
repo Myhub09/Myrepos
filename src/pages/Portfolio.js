@@ -11,9 +11,18 @@ import portrait1 from "../img/portrait1.png";
 import paysage1 from "../img/paysage1.jpg";
 import objet1 from "../img/objet1.jpg";
 
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 const Portfolio = () => {
   return (
-    <>
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <PortfolioHeader />
       <StyledPortfolio>
         <Service>
@@ -45,7 +54,7 @@ const Portfolio = () => {
           </Link>
         </Service>
       </StyledPortfolio>
-    </>
+    </motion.div>
   );
 };
 

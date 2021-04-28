@@ -7,11 +7,21 @@ import ContactHeader from "../components/ContactHeader";
 // Images
 import film from "../img/film.jpg";
 
+// Styling
 import { About, Description, Image } from "../styles";
+
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const Contact = () => {
   return (
-    <>
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <ContactHeader />
       <StyledContact>
         <Description>
@@ -46,7 +56,7 @@ const Contact = () => {
           <img src={film} alt="Caméra" />
         </Image>
       </StyledContact>
-    </>
+    </motion.div>
   );
 };
 

@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { PortfolioState } from "../portfolioState";
-import { motionValue } from "framer-motion";
+
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const PortfolioDetail = () => {
   const history = useHistory();
@@ -21,7 +24,12 @@ const PortfolioDetail = () => {
   return (
     <>
       {photographyType && ( // Vérifie si l'information du type de photographie (venant de portfolioState.js) a été reçu. Si oui, on fait le rendu des components suivants.
-        <Details>
+        <Details
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <Headline>
             <h2>{photographyType.title}</h2>
             <img src={photographyType.mainImg} alt="Type de photographie" />
@@ -41,7 +49,7 @@ const PortfolioDetail = () => {
   );
 };
 
-const Details = styled.div``;
+const Details = styled(motion.div)``;
 
 const Headline = styled.div`
   min-height: 90vh;
