@@ -19,28 +19,28 @@ const Portfolio = () => {
         <Service>
           <h2>Urbain</h2>
           <div className="line"></div>
-          <Link>
+          <Link to="/portfolio/urbain">
             <img src={urbain1} alt="urbain1" />
           </Link>
         </Service>
         <Service>
           <h2>Paysage</h2>
           <div className="line"></div>
-          <Link>
-            <img src={portrait1} alt="portrait1" />
+          <Link to="/portfolio/paysage">
+            <img src={paysage1} alt="portrait1" />
           </Link>
         </Service>
         <Service>
           <h2>Portrait</h2>
           <div className="line"></div>
-          <Link>
-            <img src={paysage1} alt="paysage1" />
+          <Link to="/portfolio/portrait">
+            <img src={portrait1} alt="paysage1" />
           </Link>
         </Service>
         <Service>
           <h2>Objet</h2>
           <div className="line"></div>
-          <Link>
+          <Link to="/portfolio/objet">
             <img src={objet1} alt="Objet" />
           </Link>
         </Service>

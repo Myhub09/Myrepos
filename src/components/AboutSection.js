@@ -1,23 +1,23 @@
 import React from "react";
 
-// Styled
-// import styled from "styled-components";
-
 // Styles
 import { About, Hide } from "../styles";
+
+// Framer Motion
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
     <About>
-      <div>
+      <motion.div>
         <Hide>
-          <h2>Traditionnellement</h2>
+          <motion.h2>Traditionnellement</motion.h2>
         </Hide>
         <Hide>
-          <h2>photographié par</h2>
+          <motion.h2>photographié par</motion.h2>
         </Hide>
         <Hide>
-          <h2>Finest Film.</h2>
+          <motion.h2>Finest Film.</motion.h2>
         </Hide>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -25,7 +25,7 @@ const AboutSection = () => {
           Nam porttitor risus eget lacus tempus dictum.
         </p>
         <button>Contactez-nous</button>
-      </div>
+      </motion.div>
     </About>
   );
 };

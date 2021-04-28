@@ -7,6 +7,7 @@ import GlobalStyle from "./components/GlobalStyle.js";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import PortfolioDetail from "./pages/PortfolioDetail";
 
 // Import Nav & Footer
 import Nav from "./components/Nav";
@@ -24,8 +25,11 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/portfolio">
+        <Route path="/portfolio" exact>
           <Portfolio />
+        </Route>
+        <Route path="/portfolio/:id">
+          <PortfolioDetail />
         </Route>
         <Route path="/contact">
           <Contact />
