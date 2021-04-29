@@ -10,7 +10,7 @@ import { pageAnimation } from "../animation";
 const PortfolioDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [photographyTypes, setPhotographyTypes] = useState(PortfolioState);
+  const [photographyTypes /*setPhotographyTypes*/] = useState(PortfolioState);
   const [photographyType, setPhotographyType] = useState(null);
 
   // UseEffect
