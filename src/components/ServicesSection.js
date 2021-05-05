@@ -32,7 +32,7 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          Une caméra analogique, <span>des services de qualité.</span>
+          Un appareil argentique, <span>des services de qualité.</span>
         </h2>
         <Cards>
           <Card>

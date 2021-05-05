@@ -14,9 +14,16 @@ import objet1 from "../img/objet1.jpg";
 
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation, fade, photoAnim, lineAnim } from "../animation";
+import { pageAnimation, scrollReveal, lineAnim } from "../animation";
+
+// Scroll Animations
+import { useScroll } from "../components/useScroll";
 
 const Portfolio = () => {
+  const [element, controls] = useScroll(); // Section 1
+  const [element2, controls2] = useScroll(); // Section 2
+  const [element3, controls3] = useScroll(); // Section 3
+  const [element4, controls4] = useScroll(); // Section 4
   return (
     <motion.div
       variants={pageAnimation}
@@ -26,31 +33,51 @@ const Portfolio = () => {
     >
       <PortfolioHeader />
       <StyledPortfolio>
-        <Service>
-          <motion.h2 variants={fade}>Urbain</motion.h2>
+        <Service
+          variants={scrollReveal}
+          ref={element}
+          animate={controls}
+          initial="hidden"
+        >
+          <motion.h2>Urbain</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/urbain">
             <Hide>
-              <motion.img variants={photoAnim} src={urbain1} alt="urbain1" />
+              <motion.img src={urbain1} alt="urbain1" />
             </Hide>
           </Link>
         </Service>
-        <Service>
-          <motion.h2 variants={fade}>Paysage</motion.h2>
+        <Service
+          variants={scrollReveal}
+          ref={element2}
+          animate={controls2}
+          initial="hidden"
+        >
+          <motion.h2>Paysage</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/paysage">
             <img src={paysage1} alt="portrait1" />
           </Link>
         </Service>
-        <Service>
-          <motion.h2 variants={fade}>Portrait</motion.h2>
+        <Service
+          variants={scrollReveal}
+          ref={element3}
+          animate={controls3}
+          initial="hidden"
+        >
+          <motion.h2>Portrait</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/portrait">
             <img src={portrait1} alt="paysage1" />
           </Link>
         </Service>
-        <Service>
-          <motion.h2 variants={fade}>Objet</motion.h2>
+        <Service
+          variants={scrollReveal}
+          ref={element4}
+          animate={controls4}
+          initial="hidden"
+        >
+          <motion.h2>Objet</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/objet">
             <img src={objet1} alt="Objet" />
@@ -70,7 +97,7 @@ const StyledPortfolio = styled.div`
   }
 `;
 
-const Service = styled.div`
+const Service = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;

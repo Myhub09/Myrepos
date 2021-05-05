@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 // Components
 import ContactHeader from "../components/ContactHeader";
@@ -10,11 +9,18 @@ import film from "../img/film.jpg";
 // Styling
 import { About, Description, Image } from "../styles";
 
+// Styled Ccomponents
+import styled from "styled-components";
+
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, scrollReveal } from "../animation";
+
+// Scroll Animations
+import { useScroll } from "../components/useScroll";
 
 const Contact = () => {
+  const [element, controls] = useScroll();
   return (
     <motion.div
       variants={pageAnimation}
@@ -23,7 +29,12 @@ const Contact = () => {
       exit="exit"
     >
       <ContactHeader />
-      <StyledContact>
+      <StyledContact
+        variants={scrollReveal}
+        ref={element}
+        animate={controls}
+        initial="hidden"
+      >
         <Description>
           <h2>Contactez-nous.</h2>
           <div>

@@ -31,7 +31,7 @@ const FaqSection = () => {
         Des questions <span>fréquemment posées</span> pour les curieux.
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="How do I Start?">
+        <Toggle title="Comment puis-je prendre rendez-vous?">
           <div className="reponse">
             <p>
               Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
@@ -51,7 +51,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Question 2?">
+        <Toggle title="Quels sont les frais associés à une séance de photographie?">
           <div className="reponse">
             <p>
               Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
@@ -71,7 +71,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Question 3?">
+        <Toggle title="Comment sont distribuées les photos?">
           <div className="reponse">
             <p>
               Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
@@ -91,27 +91,7 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle>
-        <Toggle title="Question 4?">
-          <div className="reponse">
-            <p>
-              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-              morbi tristique senectus et netus et malesuada fames ac turpis
-              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-              Sed mollis justo non justo pharetra, eu pellentesque sapien
-              mattis. Donec vitae tortor non mauris tempor placerat ac vel
-              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
-              feugiat enim. Integer aliquet diam finibus aliquam convallis.
-              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
-              metus, at tincidunt tortor. Phasellus interdum quis nisl a
-              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
-              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
-              urna non neque molestie bibendum vitae a ipsum. Nullam libero
-              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
-              urna enim, volutpat luctus maximus vel, vulputate sed quam.
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="Question 5?">
+        <Toggle title="Pourquoi la photographie argentique plutôt que digital?">
           <div className="reponse">
             <p>
               Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
