@@ -41,7 +41,7 @@ export const Hide = styled.div`
   overflow: hidden;
 `;
 
-// Portfolio
+// Services + Contact Headers
 export const HeaderSection = styled.div`
   min-height: 90vh;
   align-items: center;

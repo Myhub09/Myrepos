@@ -27,10 +27,10 @@ const Nav = () => {
           ></NavLine>
         </li>
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/services">Services</Link>
           <NavLine
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/portfolio" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/services" ? "50%" : "0%" }}
             transition={{ duration: 0.75 }}
           ></NavLine>
         </li>

@@ -4,14 +4,14 @@ import paysage1 from "./img/paysage1.jpg";
 import portrait1 from "./img/portrait1.png";
 import objet1 from "./img/objet1.jpg";
 
-export const PortfolioState = () => {
+export const ServicesState = () => {
   return [
     // Photographie urbaine
     {
       title: "Photographie urbaine",
       mainImg: urbain1,
       secondaryImg: urbain1,
-      url: "/portfolio/urbain",
+      url: "/services/urbain",
       awards: [
         {
           title: "Lorem ipsum.",
@@ -34,7 +34,7 @@ export const PortfolioState = () => {
     {
       title: "Photographie de paysage",
       mainImg: paysage1,
-      url: "/portfolio/paysage",
+      url: "/services/paysage",
       secondaryImg: paysage1,
       awards: [
         {
@@ -58,7 +58,7 @@ export const PortfolioState = () => {
     {
       title: "Photographie de portrait",
       mainImg: portrait1,
-      url: "/portfolio/portrait",
+      url: "/services/portrait",
       secondaryImg: portrait1,
       awards: [
         {
@@ -82,7 +82,7 @@ export const PortfolioState = () => {
     {
       title: "Photographie d'objet",
       mainImg: objet1,
-      url: "/portfolio/objet",
+      url: "/services/objet",
       secondaryImg: objet1,
       awards: [
         {

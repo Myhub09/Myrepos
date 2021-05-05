@@ -5,9 +5,9 @@ import GlobalStyle from "./components/GlobalStyle.js";
 
 // Import Pages
 import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
+import ServicesPage from "./pages/Services";
+import ServicesDetails from "./pages/ServicesDetails";
 import Contact from "./pages/Contact";
-import PortfolioDetail from "./pages/PortfolioDetail";
 
 // Import Nav & Footer
 import Nav from "./components/Nav";
@@ -36,11 +36,11 @@ function App() {
           <Route path="/" exact>
             <Home /> {/* Renders Home page */}
           </Route>
-          <Route path="/portfolio" exact>
-            <Portfolio /> {/* Renders Portfolio page */}
+          <Route path="/services" exact>
+            <ServicesPage /> {/* Renders Services page */}
           </Route>
-          <Route path="/portfolio/:id">
-            <PortfolioDetail /> {/* Renders Portfolio Details page */}
+          <Route path="/services/:id">
+            <ServicesDetails /> {/* Renders Services Details page */}
           </Route>
           <Route path="/contact">
             <Contact /> {/* Renders Contact page */}

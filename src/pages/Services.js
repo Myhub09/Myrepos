@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // Components
-import PortfolioHeader from "../components/PortfolioHeader";
+import ServicesHeader from "../components/ServicesHeader";
 import { Hide } from "../styles";
 
 // Images
@@ -19,7 +19,7 @@ import { pageAnimation, scrollReveal, lineAnim } from "../animation";
 // Scroll Animations
 import { useScroll } from "../components/useScroll";
 
-const Portfolio = () => {
+const ServicesPage = () => {
   const [element, controls] = useScroll(); // Section 1
   const [element2, controls2] = useScroll(); // Section 2
   const [element3, controls3] = useScroll(); // Section 3
@@ -31,8 +31,8 @@ const Portfolio = () => {
       animate="show"
       exit="exit"
     >
-      <PortfolioHeader />
-      <StyledPortfolio>
+      <ServicesHeader />
+      <StyledServices>
         <Service
           variants={scrollReveal}
           ref={element}
@@ -41,7 +41,7 @@ const Portfolio = () => {
         >
           <motion.h2>Urbain</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/portfolio/urbain">
+          <Link to="/services/urbain">
             <Hide>
               <motion.img src={urbain1} alt="urbain1" />
             </Hide>
@@ -55,7 +55,7 @@ const Portfolio = () => {
         >
           <motion.h2>Paysage</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/portfolio/paysage">
+          <Link to="/services/paysage">
             <img src={paysage1} alt="portrait1" />
           </Link>
         </Service>
@@ -67,7 +67,7 @@ const Portfolio = () => {
         >
           <motion.h2>Portrait</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/portfolio/portrait">
+          <Link to="/services/portrait">
             <img src={portrait1} alt="paysage1" />
           </Link>
         </Service>
@@ -79,16 +79,16 @@ const Portfolio = () => {
         >
           <motion.h2>Objet</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/portfolio/objet">
+          <Link to="/services/objet">
             <img src={objet1} alt="Objet" />
           </Link>
         </Service>
-      </StyledPortfolio>
+      </StyledServices>
     </motion.div>
   );
 };
 
-const StyledPortfolio = styled.div`
+const StyledServices = styled.div`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -115,4 +115,4 @@ const Service = styled(motion.div)`
   }
 `;
 
-export default Portfolio;
+export default ServicesPage;

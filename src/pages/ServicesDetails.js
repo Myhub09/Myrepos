@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { PortfolioState } from "../portfolioState";
+import { ServicesState } from "../servicesState";
 
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
-const PortfolioDetail = () => {
+const ServicesDetails = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [photographyTypes /*setPhotographyTypes*/] = useState(PortfolioState);
+  const [photographyTypes /*setPhotographyTypes*/] = useState(ServicesState);
   const [photographyType, setPhotographyType] = useState(null);
 
   // UseEffect
@@ -23,7 +23,7 @@ const PortfolioDetail = () => {
 
   return (
     <>
-      {photographyType && ( // Vérifie si l'information du type de photographie (venant de portfolioState.js) a été reçu. Si oui, on fait le rendu des components suivants.
+      {photographyType && ( // Vérifie si l'information du type de photographie (venant de servicesState.js) a été reçu. Si oui, on fait le rendu des components suivants.
         <Details
           variants={pageAnimation}
           initial="hidden"
@@ -100,4 +100,4 @@ const Award = ({ title, description }) => {
   );
 };
 
-export default PortfolioDetail;
+export default ServicesDetails;
