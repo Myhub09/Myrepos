@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     background: #fcfdff;
     font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden; // Fixes vertical scrolling
 }
 
 button {
