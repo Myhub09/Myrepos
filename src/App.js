@@ -13,35 +13,41 @@ import PortfolioDetail from "./pages/PortfolioDetail";
 import Nav from "./components/Nav";
 import FooterSection from "./components/Footer";
 
-// Router
+// React Router
 import { Switch, Route, useLocation } from "react-router-dom";
 
 // Animation
 import { AnimatePresence } from "framer-motion"; // AnimatePresence détecte lorsqu'il y a un changement de page et permet de faire une animation de sortie sur les élements.
 
+// Scroll To Top When Changing Page
+import ScrollTop from "./components/ScrollTop";
+
 function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <GlobalStyle />
-      <Nav />
+      <GlobalStyle /> {/* Applies global styles */}
+      <Nav /> {/* Renders navigation menu */}
       <AnimatePresence exitBeforeEnter>
+        {/* Detects exit and executes exit animation */}
+        <ScrollTop />
+        {/* Detects page change and executes a scroll to top of page */}
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
-            <Home />
+            <Home /> {/* Renders Home page */}
           </Route>
           <Route path="/portfolio" exact>
-            <Portfolio />
+            <Portfolio /> {/* Renders Portfolio page */}
           </Route>
           <Route path="/portfolio/:id">
-            <PortfolioDetail />
+            <PortfolioDetail /> {/* Renders Portfolio Details page */}
           </Route>
           <Route path="/contact">
-            <Contact />
+            <Contact /> {/* Renders Contact page */}
           </Route>
         </Switch>
       </AnimatePresence>
-      <FooterSection />
+      <FooterSection /> {/* Renders footer */}
     </div>
   );
 }
