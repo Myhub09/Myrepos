@@ -5,18 +5,31 @@ import portrait from "../img/portrait.svg";
 import paysage from "../img/paysage.svg";
 import objet from "../img/objet.svg";
 
-// Styled
-import styled from "styled-components";
+// Images
+import film2 from "../img/film2.jpg";
 
 // Styles
 import { About, Description, Image } from "../styles";
 
-// Images
-import film2 from "../img/film2.jpg";
+// Styled Components
+import styled from "styled-components";
+
+// Animations
+import { scrollReveal } from "../animation";
+
+// Scroll Animations
+import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
+  console.log(element);
   return (
-    <Services>
+    <Services
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <Description>
         <h2>
           Une caméra analogique, <span>des services de qualité.</span>

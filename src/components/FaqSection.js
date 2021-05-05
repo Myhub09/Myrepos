@@ -1,12 +1,32 @@
 import React from "react";
-import styled from "styled-components";
+
+// Import Components
+import Toggle from "./Toggle"; // FAQ TOGGLE
+
+// Styles
 import { About } from "../styles";
-import Toggle from "./Toggle";
+
+// Styled Components
+import styled from "styled-components";
+
+// Framer Motion
 import { AnimateSharedLayout } from "framer-motion";
 
+// Animations
+import { scrollReveal } from "../animation";
+
+// Scroll Animations
+import { useScroll } from "./useScroll";
+
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Faq>
+    <Faq
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>
         Des questions <span>fréquemment posées</span> pour les curieux.
       </h2>
