@@ -27,8 +27,12 @@ button {
     text-transform:uppercase;
     &:hover {
         background: #009a82;
-        color: #fcfdff
+        color: #fcfdff;
     }
+}
+
+.removeLeftBorder {
+    border-left:none;
 }
 
 h2 {

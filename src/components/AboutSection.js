@@ -9,6 +9,9 @@ import Wave from "./Wave";
 // Styles
 import { About, Hide } from "../styles";
 
+// React Router DOM (for button links)
+import { Link } from "react-router-dom";
+
 // Framer Motion
 import { motion } from "framer-motion";
 import {
@@ -42,7 +45,14 @@ const AboutSection = () => {
           consequat mauris malesuada eros tincidunt, ut tristique nibh pretium.
           Nam porttitor risus eget lacus tempus dictum.
         </motion.p>
-        <motion.button variants={fade}>Contactez-nous</motion.button>
+        <Link to="/services">
+          <motion.button variants={fade}>Voir nos services</motion.button>
+        </Link>
+        <Link to="/contact">
+          <motion.button variants={fade} className="removeLeftBorder">
+            Nous contacter
+          </motion.button>
+        </Link>
       </motion.div>
       <Wave />
     </About>
