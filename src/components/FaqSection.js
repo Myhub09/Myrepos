@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -8,126 +10,108 @@ const FaqSection = () => {
       <h2>
         Des questions <span>fréquemment posées</span> pour les curieux.
       </h2>
-      <div className="question">
-        <h4>
-          Phasellus vel turpis id lacus blandit pellentesque et quis justo?
-        </h4>
-        <div className="reponse">
-          <p>
-            Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-            Sed mollis justo non justo pharetra, eu pellentesque sapien mattis.
-            Donec vitae tortor non mauris tempor placerat ac vel felis. Sed
-            ultricies eros at dui efficitur fermentum. Fusce ut feugiat enim.
-            Integer aliquet diam finibus aliquam convallis. Aenean et imperdiet
-            tortor, vel mattis ipsum. Donec at suscipit metus, at tincidunt
-            tortor. Phasellus interdum quis nisl a volutpat. Maecenas cursus,
-            neque eget lacinia lacinia, libero velit porttitor turpis, non
-            mattis orci ante eu velit. Morbi at urna non neque molestie bibendum
-            vitae a ipsum. Nullam libero enim, molestie mattis lacinia eu,
-            vehicula egestas magna. Maecenas urna enim, volutpat luctus maximus
-            vel, vulputate sed quam.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>
-          Phasellus vel turpis id lacus blandit pellentesque et quis justo?
-        </h4>
-        <div className="reponse">
-          <p>
-            Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-            Sed mollis justo non justo pharetra, eu pellentesque sapien mattis.
-            Donec vitae tortor non mauris tempor placerat ac vel felis. Sed
-            ultricies eros at dui efficitur fermentum. Fusce ut feugiat enim.
-            Integer aliquet diam finibus aliquam convallis. Aenean et imperdiet
-            tortor, vel mattis ipsum. Donec at suscipit metus, at tincidunt
-            tortor. Phasellus interdum quis nisl a volutpat. Maecenas cursus,
-            neque eget lacinia lacinia, libero velit porttitor turpis, non
-            mattis orci ante eu velit. Morbi at urna non neque molestie bibendum
-            vitae a ipsum. Nullam libero enim, molestie mattis lacinia eu,
-            vehicula egestas magna. Maecenas urna enim, volutpat luctus maximus
-            vel, vulputate sed quam.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>
-          Phasellus vel turpis id lacus blandit pellentesque et quis justo?
-        </h4>
-        <div className="reponse">
-          <p>
-            Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-            Sed mollis justo non justo pharetra, eu pellentesque sapien mattis.
-            Donec vitae tortor non mauris tempor placerat ac vel felis. Sed
-            ultricies eros at dui efficitur fermentum. Fusce ut feugiat enim.
-            Integer aliquet diam finibus aliquam convallis. Aenean et imperdiet
-            tortor, vel mattis ipsum. Donec at suscipit metus, at tincidunt
-            tortor. Phasellus interdum quis nisl a volutpat. Maecenas cursus,
-            neque eget lacinia lacinia, libero velit porttitor turpis, non
-            mattis orci ante eu velit. Morbi at urna non neque molestie bibendum
-            vitae a ipsum. Nullam libero enim, molestie mattis lacinia eu,
-            vehicula egestas magna. Maecenas urna enim, volutpat luctus maximus
-            vel, vulputate sed quam.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>
-          Phasellus vel turpis id lacus blandit pellentesque et quis justo?
-        </h4>
-        <div className="reponse">
-          <p>
-            Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-            Sed mollis justo non justo pharetra, eu pellentesque sapien mattis.
-            Donec vitae tortor non mauris tempor placerat ac vel felis. Sed
-            ultricies eros at dui efficitur fermentum. Fusce ut feugiat enim.
-            Integer aliquet diam finibus aliquam convallis. Aenean et imperdiet
-            tortor, vel mattis ipsum. Donec at suscipit metus, at tincidunt
-            tortor. Phasellus interdum quis nisl a volutpat. Maecenas cursus,
-            neque eget lacinia lacinia, libero velit porttitor turpis, non
-            mattis orci ante eu velit. Morbi at urna non neque molestie bibendum
-            vitae a ipsum. Nullam libero enim, molestie mattis lacinia eu,
-            vehicula egestas magna. Maecenas urna enim, volutpat luctus maximus
-            vel, vulputate sed quam.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>
-          Phasellus vel turpis id lacus blandit pellentesque et quis justo?
-        </h4>
-        <div className="reponse">
-          <p>
-            Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis
-            egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-            Sed mollis justo non justo pharetra, eu pellentesque sapien mattis.
-            Donec vitae tortor non mauris tempor placerat ac vel felis. Sed
-            ultricies eros at dui efficitur fermentum. Fusce ut feugiat enim.
-            Integer aliquet diam finibus aliquam convallis. Aenean et imperdiet
-            tortor, vel mattis ipsum. Donec at suscipit metus, at tincidunt
-            tortor. Phasellus interdum quis nisl a volutpat. Maecenas cursus,
-            neque eget lacinia lacinia, libero velit porttitor turpis, non
-            mattis orci ante eu velit. Morbi at urna non neque molestie bibendum
-            vitae a ipsum. Nullam libero enim, molestie mattis lacinia eu,
-            vehicula egestas magna. Maecenas urna enim, volutpat luctus maximus
-            vel, vulputate sed quam.
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title="How do I Start?">
+          <div className="reponse">
+            <p>
+              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
+              Sed mollis justo non justo pharetra, eu pellentesque sapien
+              mattis. Donec vitae tortor non mauris tempor placerat ac vel
+              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
+              feugiat enim. Integer aliquet diam finibus aliquam convallis.
+              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
+              metus, at tincidunt tortor. Phasellus interdum quis nisl a
+              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
+              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
+              urna non neque molestie bibendum vitae a ipsum. Nullam libero
+              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
+              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Question 2?">
+          <div className="reponse">
+            <p>
+              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
+              Sed mollis justo non justo pharetra, eu pellentesque sapien
+              mattis. Donec vitae tortor non mauris tempor placerat ac vel
+              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
+              feugiat enim. Integer aliquet diam finibus aliquam convallis.
+              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
+              metus, at tincidunt tortor. Phasellus interdum quis nisl a
+              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
+              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
+              urna non neque molestie bibendum vitae a ipsum. Nullam libero
+              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
+              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Question 3?">
+          <div className="reponse">
+            <p>
+              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
+              Sed mollis justo non justo pharetra, eu pellentesque sapien
+              mattis. Donec vitae tortor non mauris tempor placerat ac vel
+              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
+              feugiat enim. Integer aliquet diam finibus aliquam convallis.
+              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
+              metus, at tincidunt tortor. Phasellus interdum quis nisl a
+              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
+              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
+              urna non neque molestie bibendum vitae a ipsum. Nullam libero
+              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
+              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Question 4?">
+          <div className="reponse">
+            <p>
+              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
+              Sed mollis justo non justo pharetra, eu pellentesque sapien
+              mattis. Donec vitae tortor non mauris tempor placerat ac vel
+              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
+              feugiat enim. Integer aliquet diam finibus aliquam convallis.
+              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
+              metus, at tincidunt tortor. Phasellus interdum quis nisl a
+              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
+              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
+              urna non neque molestie bibendum vitae a ipsum. Nullam libero
+              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
+              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Question 5?">
+          <div className="reponse">
+            <p>
+              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis
+              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
+              Sed mollis justo non justo pharetra, eu pellentesque sapien
+              mattis. Donec vitae tortor non mauris tempor placerat ac vel
+              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
+              feugiat enim. Integer aliquet diam finibus aliquam convallis.
+              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
+              metus, at tincidunt tortor. Phasellus interdum quis nisl a
+              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
+              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
+              urna non neque molestie bibendum vitae a ipsum. Nullam libero
+              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
+              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };

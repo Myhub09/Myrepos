@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 // Components
 import PortfolioHeader from "../components/PortfolioHeader";
+import { Hide } from "../styles";
 
 // Images
 import urbain1 from "../img/urbain1.jpg";
@@ -13,7 +14,7 @@ import objet1 from "../img/objet1.jpg";
 
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animation";
+import { pageAnimation, fade, photoAnim, lineAnim } from "../animation";
 
 const Portfolio = () => {
   return (
@@ -26,29 +27,31 @@ const Portfolio = () => {
       <PortfolioHeader />
       <StyledPortfolio>
         <Service>
-          <h2>Urbain</h2>
-          <div className="line"></div>
+          <motion.h2 variants={fade}>Urbain</motion.h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/urbain">
-            <img src={urbain1} alt="urbain1" />
+            <Hide>
+              <motion.img variants={photoAnim} src={urbain1} alt="urbain1" />
+            </Hide>
           </Link>
         </Service>
         <Service>
-          <h2>Paysage</h2>
-          <div className="line"></div>
+          <motion.h2 variants={fade}>Paysage</motion.h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/paysage">
             <img src={paysage1} alt="portrait1" />
           </Link>
         </Service>
         <Service>
-          <h2>Portrait</h2>
-          <div className="line"></div>
+          <motion.h2 variants={fade}>Portrait</motion.h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/portrait">
             <img src={portrait1} alt="paysage1" />
           </Link>
         </Service>
         <Service>
-          <h2>Objet</h2>
-          <div className="line"></div>
+          <motion.h2 variants={fade}>Objet</motion.h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Link to="/portfolio/objet">
             <img src={objet1} alt="Objet" />
           </Link>
@@ -81,7 +84,6 @@ const Service = styled.div`
     transition: 0.5s ease;
     &:hover {
       opacity: 0.75;
-      height: 90vh;
     }
   }
 `;
