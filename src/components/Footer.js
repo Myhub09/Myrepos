@@ -14,13 +14,16 @@ const FooterSection = () => {
 };
 
 const Footer = styled.div`
-  min-height: 10vh;
+  min-height: 5vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 0rem 10rem;
   background: #f2f4f7;
+  p {
+    font-size: 1rem;
+  }
   a {
     color: #011627;
     text-decoration: none;
