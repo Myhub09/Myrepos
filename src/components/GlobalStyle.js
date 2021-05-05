@@ -24,7 +24,6 @@ button {
     background:transparent;
     transition: all 0.5s ease;
     font-family: 'Space Grotesk', sans-serif;
-    text-transform:uppercase;
     &:hover {
         background: #009a82;
         color: #fcfdff;

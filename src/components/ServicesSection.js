@@ -40,28 +40,28 @@ const ServicesSection = () => {
               <img src={urbain} alt="Icône Urbain" />
               <h4 className="red">Urbain</h4>
             </Icon>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Photographie d'édifices et d'architecture.</p>
           </Card>
           <Card>
             <Icon>
               <img src={portrait} alt="Icône Portrait" />
               <h4 className="blue">Portrait</h4>
             </Icon>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Posage et photographie de personnes.</p>
           </Card>
           <Card>
             <Icon>
               <img src={paysage} alt="Icône Paysage" />
               <h4 className="blue">Paysage</h4>
             </Icon>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Photographie d'endroits naturels.</p>
           </Card>
           <Card>
             <Icon>
               <img src={objet} alt="Icône Objet" />
               <h4 className="red">Objet</h4>
             </Icon>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Photographie de sujets matériaux.</p>
           </Card>
         </Cards>
       </Description>
@@ -91,7 +91,8 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 15rem;
+  flex-basis: 10rem;
+  padding-right: 1rem;
 `;
 
 const Icon = styled.div`
@@ -102,9 +103,8 @@ const Icon = styled.div`
     height: 72px;
   }
   h4 {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     padding: 1rem;
-    text-transform: uppercase;
   }
 `;
 

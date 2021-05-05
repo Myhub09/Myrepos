@@ -41,9 +41,9 @@ const AboutSection = () => {
           <motion.h2 variants={titleAnim}>Finest Film.</motion.h2>
         </Hide>
         <motion.p variants={fade}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          consequat mauris malesuada eros tincidunt, ut tristique nibh pretium.
-          Nam porttitor risus eget lacus tempus dictum.
+          Bienvenue chez le studio Finest Film, meneur dans photographie
+          argentique. Depuis dix ans, nous modernisons cette méthode de
+          photographie tout en gardant son style agréablement rétro.
         </motion.p>
         <Link to="/services">
           <motion.button variants={fade}>Voir nos services</motion.button>

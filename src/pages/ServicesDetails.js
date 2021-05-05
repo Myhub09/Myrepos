@@ -24,7 +24,7 @@ const ServicesDetails = () => {
   return (
     <>
       {photographyType && ( // Vérifie si l'information du type de photographie (venant de servicesState.js) a été reçu. Si oui, on fait le rendu des components suivants.
-        <Details
+        <StyledDetails
           variants={pageAnimation}
           initial="hidden"
           animate="show"
@@ -34,22 +34,22 @@ const ServicesDetails = () => {
             <h2>{photographyType.title}</h2>
             <img src={photographyType.mainImg} alt="Type de photographie" />
           </Headline>
-          <Awards>
-            {photographyType.awards.map((award) => (
-              <Award
-                title={award.title}
-                description={award.description}
-                key={award.title}
+          <Details>
+            {photographyType.details.map((detail) => (
+              <Detail
+                title={detail.title}
+                description={detail.description}
+                key={detail.title}
               />
             ))}
-          </Awards>
-        </Details>
+          </Details>
+        </StyledDetails>
       )}
     </>
   );
 };
 
-const Details = styled(motion.div)``;
+const StyledDetails = styled(motion.div)``;
 
 const Headline = styled.div`
   min-height: 90vh;
@@ -68,7 +68,7 @@ const Headline = styled.div`
   }
 `;
 
-const Awards = styled.div`
+const Details = styled.div`
   min-height: 80vh;
   display: flex;
   margin: 5rem 10rem;
@@ -89,8 +89,8 @@ const AwardStyle = styled.div`
   }
 `;
 
-// Award Component
-const Award = ({ title, description }) => {
+// Detail Component
+const Detail = ({ title, description }) => {
   return (
     <AwardStyle>
       <h3>{title}</h3>

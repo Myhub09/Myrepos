@@ -12,21 +12,21 @@ export const ServicesState = () => {
       mainImg: urbain1,
       secondaryImg: urbain1,
       url: "/services/urbain",
-      awards: [
+      details: [
         {
-          title: "Lorem ipsum.",
+          title: "Description",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "La photographie urbaine consiste à photographier des édifices et autres constructions architecturales, généralement dans des villes.",
         },
         {
-          title: "Dolor sit amet.",
+          title: "Prix",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Pour avoir milieu urbain ou un immeuble photographié, nous chargeons 40$ par heure, transport compris.",
         },
         {
-          title: "Adipiscing elit.",
+          title: "Portfolio",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Curieux(se) à en voir plus? Rendez-vous sur notre Pinterest dans notre collection Urbain pour voir notre portfolio de photographie urbaine",
         },
       ],
     },
@@ -36,21 +36,21 @@ export const ServicesState = () => {
       mainImg: paysage1,
       url: "/services/paysage",
       secondaryImg: paysage1,
-      awards: [
+      details: [
         {
-          title: "Lorem ipsum.",
+          title: "Description",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "La photographie de paysage consiste photographier des scènes naturelles, que ce soit des vastes champs ou de grandes montagnes.",
         },
         {
-          title: "Dolor sit amet.",
+          title: "Prix",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Pour avoir lieu naturel photographié, nous chargeons 30$ par heure, transport compris.",
         },
         {
-          title: "Adipiscing elit.",
+          title: "Portfolio",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Curieux(se) à en voir plus? Rendez-vous sur notre Pinterest dans notre collection Paysage pour voir notre portfolio de photographie de paysages.",
         },
       ],
     },
@@ -60,21 +60,21 @@ export const ServicesState = () => {
       mainImg: portrait1,
       url: "/services/portrait",
       secondaryImg: portrait1,
-      awards: [
+      details: [
         {
-          title: "Lorem ipsum.",
+          title: "Description",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "La photographie de portrait consiste à poser et photographier des personnes, que ce soit individuelle ou en groupe.",
         },
         {
-          title: "Dolor sit amet.",
+          title: "Prix",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Pour être photographié, nous chargeons 40$ par heure, transport compris.",
         },
         {
-          title: "Adipiscing elit.",
+          title: "Portfolio",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Curieux(se) à en voir plus? Rendez-vous sur notre Pinterest dans notre collection Portrait pour voir notre portfolio de photographie de portraits.",
         },
       ],
     },
@@ -84,21 +84,21 @@ export const ServicesState = () => {
       mainImg: objet1,
       url: "/services/objet",
       secondaryImg: objet1,
-      awards: [
+      details: [
         {
-          title: "Lorem ipsum.",
+          title: "Description",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "La photographie d'objets consiste à photographier des sujets matériaux, notamment des produits de compagnie.",
         },
         {
-          title: "Dolor sit amet.",
+          title: "Prix",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Pour avoir un objet quelconque photographié, nous chargeons 30$ par heure, transport compris.",
         },
         {
-          title: "Adipiscing elit.",
+          title: "Portfolio",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Curieux(se) à en voir plus? Rendez-vous sur notre Pinterest dans notre collection Objet pour voir notre portfolio de photographie d'objets.",
         },
       ],
     },

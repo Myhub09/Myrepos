@@ -9,6 +9,9 @@ import { About } from "../styles";
 // Styled Components
 import styled from "styled-components";
 
+// React Router DOM (for button links)
+import { Link } from "react-router-dom";
+
 // Framer Motion
 import { AnimateSharedLayout } from "framer-motion";
 
@@ -31,84 +34,59 @@ const FaqSection = () => {
         Des questions <span>fréquemment posées</span> pour les curieux.
       </h2>
       <AnimateSharedLayout>
-        <Toggle title="Comment puis-je prendre rendez-vous?">
+        <Toggle title="Pourquoi la photographie argentique plutôt que digital?">
           <div className="reponse">
             <p>
-              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-              morbi tristique senectus et netus et malesuada fames ac turpis
-              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-              Sed mollis justo non justo pharetra, eu pellentesque sapien
-              mattis. Donec vitae tortor non mauris tempor placerat ac vel
-              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
-              feugiat enim. Integer aliquet diam finibus aliquam convallis.
-              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
-              metus, at tincidunt tortor. Phasellus interdum quis nisl a
-              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
-              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
-              urna non neque molestie bibendum vitae a ipsum. Nullam libero
-              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
-              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+              Chez Finest Film, nous valorisons beaucoup nos clients. Nous
+              sommes donc toujours ouverts à de nouvelles demandes de séances
+              photographiques. Vous pouvez prendre un rendez-vous en nous
+              écrivant par courriel, en nous téléphonant ou en nous envoyant un
+              message instantané à nos réseaux sociaux. Nous répondons dans les
+              plus brefs délais.
             </p>
           </div>
         </Toggle>
         <Toggle title="Quels sont les frais associés à une séance de photographie?">
           <div className="reponse">
             <p>
-              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-              morbi tristique senectus et netus et malesuada fames ac turpis
-              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-              Sed mollis justo non justo pharetra, eu pellentesque sapien
-              mattis. Donec vitae tortor non mauris tempor placerat ac vel
-              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
-              feugiat enim. Integer aliquet diam finibus aliquam convallis.
-              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
-              metus, at tincidunt tortor. Phasellus interdum quis nisl a
-              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
-              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
-              urna non neque molestie bibendum vitae a ipsum. Nullam libero
-              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
-              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+              Chez Finest Film, nous valorisons beaucoup nos clients. Nous
+              sommes donc toujours ouverts à de nouvelles demandes de séances
+              photographiques. Vous pouvez prendre un rendez-vous en nous
+              écrivant par courriel, en nous téléphonant ou en nous envoyant un
+              message instantané à nos réseaux sociaux. Nous répondons dans les
+              plus brefs délais.
             </p>
           </div>
         </Toggle>
         <Toggle title="Comment sont distribuées les photos?">
           <div className="reponse">
             <p>
-              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-              morbi tristique senectus et netus et malesuada fames ac turpis
-              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-              Sed mollis justo non justo pharetra, eu pellentesque sapien
-              mattis. Donec vitae tortor non mauris tempor placerat ac vel
-              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
-              feugiat enim. Integer aliquet diam finibus aliquam convallis.
-              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
-              metus, at tincidunt tortor. Phasellus interdum quis nisl a
-              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
-              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
-              urna non neque molestie bibendum vitae a ipsum. Nullam libero
-              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
-              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+              Chez Finest Film, nous valorisons beaucoup nos clients. Nous
+              sommes donc toujours ouverts à de nouvelles demandes de séances
+              photographiques. Vous pouvez prendre un rendez-vous en nous
+              écrivant par courriel, en nous téléphonant ou en nous envoyant un
+              message instantané à nos réseaux sociaux. Nous répondons dans les
+              plus brefs délais.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Pourquoi la photographie argentique plutôt que digital?">
+        <Toggle title="Comment puis-je prendre rendez-vous?">
           <div className="reponse">
             <p>
-              Integer eu tempor metus, eu laoreet ante. Pellentesque habitant
-              morbi tristique senectus et netus et malesuada fames ac turpis
-              egestas. Etiam sit amet elit ipsum. Sed placerat molestie mattis.
-              Sed mollis justo non justo pharetra, eu pellentesque sapien
-              mattis. Donec vitae tortor non mauris tempor placerat ac vel
-              felis. Sed ultricies eros at dui efficitur fermentum. Fusce ut
-              feugiat enim. Integer aliquet diam finibus aliquam convallis.
-              Aenean et imperdiet tortor, vel mattis ipsum. Donec at suscipit
-              metus, at tincidunt tortor. Phasellus interdum quis nisl a
-              volutpat. Maecenas cursus, neque eget lacinia lacinia, libero
-              velit porttitor turpis, non mattis orci ante eu velit. Morbi at
-              urna non neque molestie bibendum vitae a ipsum. Nullam libero
-              enim, molestie mattis lacinia eu, vehicula egestas magna. Maecenas
-              urna enim, volutpat luctus maximus vel, vulputate sed quam.
+              Chez Finest Film, nous valorisons beaucoup nos clients. Nous
+              sommes donc toujours ouverts à de nouvelles demandes de séances
+              photographiques. Vous pouvez prendre un rendez-vous en nous
+              écrivant par courriel, en nous téléphonant ou en nous envoyant un
+              message instantané à nos réseaux sociaux. Nous répondons dans les
+              plus brefs délais.
+              <br />
+              <br />
+              Nos coordonnées se trouvent sur notre page Contact, accessible à
+              partir du bouton ci-dessous.
             </p>
+            <Link to="/contact">
+              <button>Nous contacter</button>
+            </Link>
           </div>
         </Toggle>
       </AnimateSharedLayout>
