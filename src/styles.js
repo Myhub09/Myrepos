@@ -13,6 +13,10 @@ export const About = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 25rem;
   color: #011627;
+  @media (max-width: 1000px) {
+    display: block;
+    padding: 2.5em 2.5rem;
+  }
 `;
 
 export const Description = styled.div`

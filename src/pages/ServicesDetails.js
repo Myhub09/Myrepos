@@ -74,9 +74,13 @@ const Details = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1000px) {
+    display: block;
+    margin: 2.5rem 2.5rem;
+  }
 `;
 
-const AwardStyle = styled.div`
+const DetailsStyle = styled.div`
   padding: 5rem;
   .line {
     width: 100%;
@@ -92,11 +96,11 @@ const AwardStyle = styled.div`
 // Detail Component
 const Detail = ({ title, description }) => {
   return (
-    <AwardStyle>
+    <DetailsStyle>
       <h3>{title}</h3>
       <div className="line"></div>
       <p>{description}</p>
-    </AwardStyle>
+    </DetailsStyle>
   );
 };
 

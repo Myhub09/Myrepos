@@ -74,6 +74,9 @@ const Contact = () => {
 export const StyledContact = styled(About)`
   text-align: left;
   padding: 5rem 10rem;
+  @media (max-width: 1000px) {
+    padding: 5rem 2.5rem;
+  }
   h2 {
     padding-bottom: 5rem;
   }

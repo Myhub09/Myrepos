@@ -98,6 +98,9 @@ const Faq = styled(About)`
   display: block;
   text-align: left;
   padding: 5rem 10rem;
+  @media (max-width: 1000px) {
+    padding: 2.5rem 5rem;
+  }
   span {
     display: block;
   }

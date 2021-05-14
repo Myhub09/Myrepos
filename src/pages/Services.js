@@ -92,6 +92,9 @@ const StyledServices = styled.div`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  @media (max-width: 1000px) {
+    padding: 2.5rem 2.5rem;
+  }
   h2 {
     padding: 1rem 0rem;
   }

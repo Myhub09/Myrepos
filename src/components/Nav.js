@@ -70,6 +70,13 @@ const StyledNav = styled.nav`
     position: relative;
     padding-left: 2rem;
   }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    ul {
+      padding: 1rem;
+    }
+  }
 `;
 
 const NavLine = styled(motion.div)`

@@ -8,6 +8,15 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
 }
 
+html {
+    @media (max-width: 1200px){
+        font-size: 80%; // Reduce font size when making screen smaller
+    }
+    @media (max-width: 600px){
+        font-size: 70%; // Reduce font size when making screen smaller
+    }
+}
+
 body {
     background: #fcfdff;
     font-family: 'Space Grotesk', sans-serif;

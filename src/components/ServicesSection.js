@@ -83,6 +83,10 @@ export const Services = styled(About)`
     width: 75%;
     padding: 2rem 0rem 4rem 0rem;
   }
+  @media (max-width: 1000px) {
+    justify-content: center;
+    padding: 2.5rem 5rem;
+  }
 `;
 
 const Cards = styled.div`
