@@ -71,6 +71,23 @@ p {
     line-height:150%;
     font-family: 'Space Grotesk', sans-serif;
 }
+
+::-webkit-scrollbar-track
+{
+	background-color: #f2f4f7;;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #f2f4f7;;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #3f7d6e;
+}
+
 `;
 
 export default GlobalStyle;
