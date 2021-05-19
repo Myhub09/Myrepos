@@ -69,6 +69,10 @@ const StyledNav = styled.nav`
   li {
     position: relative;
     padding-left: 2rem;
+    transition: all 0.2s ease;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   @media (max-width: 1000px) {
     flex-direction: column;
