@@ -86,12 +86,18 @@ export const Services = styled(About)`
   @media (max-width: 1000px) {
     justify-content: center;
     padding: 2.5rem 5rem;
+    p {
+      width: 100%;
+    }
   }
 `;
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1000px) {
+    justify-content: center;
+  }
 `;
 
 const Card = styled.div`

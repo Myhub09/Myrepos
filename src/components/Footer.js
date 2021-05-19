@@ -32,6 +32,13 @@ const Footer = styled.div`
       opacity: 0.5;
     }
   }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
+  }
 `;
 
 export default FooterSection;

@@ -60,4 +60,10 @@ export const HeaderSection = styled.div`
     color: #fcfdff;
     padding-right: 20rem;
   }
+  @media (max-width: 1000px) {
+    padding: 5rem 2.5rem;
+    p {
+      padding-right: 0rem;
+    }
+  }
 `;
